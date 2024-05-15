@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<h1><%= title %></h1>
+
+<%= new Date() %>
+
+<!-- 17 esta es la sintaxis de ejs -->
+
+<ul>
+
+    <% for(let i=0; i < users.length; i++) {%>
+        <li><%= users[i].id %> <%= users[i].name %> <%= users[i].lastName %></li>
+    <% } %>
+
+</ul>
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,15 @@
+<!-- 18 async code cuando hay una peticion a un servidor ese servidor puede hacer una peticion a
+otro servidor traer datos de un sistemas externo -->
+
+
+<%- include('partials/header'); -%>
+
+<h1>Posts</h1>
+
+<% for(let i= 0; i < posts.length; i++) {%>
+    <article>
+        <h1><%= posts[i].title %></h1>
+        <p><%= posts[i].body %></h1>
+    </article>
+<% } %>    
+<%- include('partials/footer'); -%>
